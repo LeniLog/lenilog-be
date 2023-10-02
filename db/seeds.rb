@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+@user_1 = User.create!(name: "Dyson", password: "harambe")
+
+@post_1 = @user_1.posts.create!(title: "1 Post", date: "12/12/2012", body: "Post 1")
+@post_2 = @user_1.posts.create!(title: "2 Post", date: "12/12/2012", body: "Post 2")
